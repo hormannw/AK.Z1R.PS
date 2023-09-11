@@ -424,8 +424,6 @@ AK.Z1R <- function(n=10000,d=4,s=1,rho=0,gam=51,nTDRsetup=3000,constrRatio=0.5,R
 #                     values between 0.2 and 0.8 give similar results                 
 # plotyn ... TRUE to plot the marginal density f_Z1 and its upper bound constructed in the set-up
 
-print("hallo")
-
   um <- matrix(rnorm((d-2)*n),nrow=n)
   um <- um/sqrt(rowSums(um^2)) #... n x (d-2) matrix with n random directions as row vectors
   u1 <- runif(n)
